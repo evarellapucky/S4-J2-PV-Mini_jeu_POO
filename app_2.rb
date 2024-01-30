@@ -50,13 +50,13 @@ require_relative 'lib/player'
         puts " "
       else
         puts "On t'a dit : a, b, 0 ou 1 ... c'est pas compliqué quand-même !"  
-      end
-    
+      end 
       puts " "
       sleep(1)
-    puts "les ennemis t'attaquent ! (mais t'es pas sensé mourir)"
+    
     enemies.each do |enemy|
       if enemy.life_points > 0
+        puts "les ennemis t'attaquent ! (mais t'es pas sensé mourir)"
         enemy.attacks(player)
       end
     end 
